@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bhumireddy Ramanatha Reddy — Portfolio</title>
+    <meta name="description" content="Software & Electronics Engineer | Full-Stack + IoT Enthusiast" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script>
+      tailwind.config = { darkMode: 'class', theme: { extend: {} } };
+      const pref = localStorage.getItem('theme'); if (pref === 'dark') document.documentElement.classList.add('dark');
+    </script>
+  </head>
+  <body class="bg-zinc-50 text-zinc-900 dark:bg-zinc-900 dark:text-zinc-100">
+    <header class="sticky top-0 z-40 backdrop-blur bg-white/60 dark:bg-zinc-900/60 border-b border-zinc-200 dark:border-zinc-800">
+      <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+        <a href="#home" class="font-semibold">B. Ramanatha Reddy</a>
+        <nav class="hidden md:flex gap-6 text-sm">
+          <a href="#about" class="hover:underline">About</a>
+          <a href="#skills" class="hover:underline">Skills</a>
+          <a href="#projects" class="hover:underline">Projects</a>
+          <a href="#education" class="hover:underline">Education</a>
+          <a href="#contact" class="hover:underline">Contact</a>
+        </nav>
+        <div class="flex gap-3 items-center">
+          <a href="https://github.com/yourusername" target="_blank" class="hover:opacity-80">🐙</a>
+          <a href="https://linkedin.com/in/yourusername" target="_blank" class="hover:opacity-80">💼</a>
+          <button id="themeBtn" class="rounded-xl px-3 py-1.5 ring-1 ring-zinc-300 dark:ring-zinc-700 hover:bg-zinc-100 dark:hover:bg-zinc-800 text-sm">🌙 Dark</button>
+        </div>
+      </div>
+    </header>
+    <main class="max-w-6xl mx-auto px-4 space-y-16 py-10" id="home">
+      <section class="grid md:grid-cols-[1.15fr_.85fr] items-center gap-8" data-aos="fade-up">
+        <div>
+          <h1 class="text-3xl md:text-5xl font-extrabold tracking-tight">Bhumireddy Ramanatha Reddy</h1>
+          <p class="mt-3 text-lg md:text-xl opacity-90">Software & Electronics Engineer | Full-Stack + IoT Enthusiast</p>
+          <div class="mt-4 flex flex-wrap gap-3 text-sm">
+            <span class="inline-flex items-center gap-2">📍 Chennai, India</span>
+            <a class="inline-flex items-center gap-2 underline" href="mailto:brr7438@gmail.com">✉️ brr7438@gmail.com</a>
+          </div>
+          <div class="mt-6 flex flex-wrap gap-3">
+            <a class="inline-flex items-center gap-2 rounded-xl px-4 py-2 ring-1 ring-zinc-300 dark:ring-zinc-700 hover:bg-zinc-100 dark:hover:bg-zinc-800" href="assets/resume_technical.pdf" download>⬇️ Technical Resume</a>
+            <a class="inline-flex items-center gap-2 rounded-xl px-4 py-2 ring-1 ring-zinc-300 dark:ring-zinc-700 hover:bg-zinc-100 dark:hover:bg-zinc-800" href="assets/resume_hardware.pdf" download>⬇️ Hardware Resume</a>
+            <a class="inline-flex items-center gap-2 rounded-xl px-4 py-2 bg-blue-600 text-white hover:bg-blue-700" href="mailto:brr7438@gmail.com">💌 Hire Me</a>
+          </div>
+        </div>
+        <div class="bg-white dark:bg-zinc-800 rounded-2xl ring-1 ring-zinc-200 dark:ring-zinc-700 p-6 flex items-center justify-center">
+          <img src="assets/photo.jpg" alt="Bhumireddy Ramanatha Reddy" class="w-56 h-56 md:w-64 md:h-64 object-cover rounded-2xl shadow" />
+        </div>
+      </section>
+      <section id="about" class="space-y-3" data-aos="fade-up">
+        <h2 class="text-2xl font-bold">About</h2>
+        <p class="leading-7 opacity-90">I am a recent ECE graduate with a strong interest in full‑stack development and embedded/IoT systems. I enjoy solving problems with code (Java, Python, SQL) and designing hardware using tools like MATLAB, HFSS, ANSYS and ADS. I’m comfortable in Linux and love building things that work end‑to‑end.</p>
+      </section>
+      <section id="skills" class="space-y-6" data-aos="fade-up">
+        <h2 class="text-2xl font-bold">Skills</h2>
+        <div class="grid md:grid-cols-2 gap-6">
+          <div class="p-5 rounded-2xl ring-1 ring-zinc-200 dark:ring-zinc-700 bg-white dark:bg-zinc-800" data-aos="zoom-in">
+            <h3 class="font-semibold mb-2">Software</h3>
+            <p class="opacity-90">Java, Python, C, SQL, Data Structures & Algorithms, Power BI, Tableau, Excel, Git/GitHub, REST APIs</p>
+          </div>
+          <div class="p-5 rounded-2xl ring-1 ring-zinc-200 dark:ring-zinc-700 bg-white dark:bg-zinc-800" data-aos="zoom-in">
+            <h3 class="font-semibold mb-2">ECE / Hardware</h3>
+            <p class="opacity-90">IoT, MATLAB, ANSYS, HFSS, ADS, Antenna Design, Linux, Advanced System Design</p>
+          </div>
+        </div>
+      </section>
+      <section id="projects" class="space-y-6" data-aos="fade-up">
+        <h2 class="text-2xl font-bold">Projects</h2>
+        <div class="grid md:grid-cols-3 gap-6">
+          <a href="#" class="p-5 rounded-2xl ring-1 ring-zinc-200 dark:ring-zinc-700 bg-white dark:bg-zinc-800 hover:shadow-lg transition" data-aos="fade-right">
+            <h3 class="font-semibold">Crop Disease Prediction (CNN)</h3>
+            <p class="mt-2 text-sm opacity-90">Built a TensorFlow CNN model to classify crop diseases from images, improving detection speed and accuracy for farmers.</p>
+          </a>
+          <a href="#" class="p-5 rounded-2xl ring-1 ring-zinc-200 dark:ring-zinc-700 bg-white dark:bg-zinc-800 hover:shadow-lg transition" data-aos="fade-up">
+            <h3 class="font-semibold">IoT Fire Alarm System</h3>
+            <p class="mt-2 text-sm opacity-90">Designed an IoT system with sensors + GSM to alert emergencies; integrated GPS for location‑aware responses.</p>
+          </a>
+          <a href="#" class="p-5 rounded-2xl ring-1 ring-zinc-200 dark:ring-zinc-700 bg-white dark:bg-zinc-800 hover:shadow-lg transition" data-aos="fade-left">
+            <h3 class="font-semibold">Circular Microstrip Antenna</h3>
+            <p class="mt-2 text-sm opacity-90">Optimized parameters in HFSS/ADS to achieve target bandwidth and efficiency for wireless applications.</p>
+          </a>
+        </div>
+      </section>
+      <section id="education" class="space-y-3" data-aos="fade-up">
+        <h2 class="text-2xl font-bold">Education</h2>
+        <ul class="list-disc ml-5 space-y-2">
+          <li><span class="font-medium">B.Tech (ECE) — Vel Tech University</span></li>
+          <li>Narayana Junior College</li>
+          <li>Good Children High School</li>
+        </ul>
+      </section>
+      <section id="contact" class="space-y-3" data-aos="fade-up">
+        <h2 class="text-2xl font-bold">Contact</h2>
+        <p>Email: <a class="underline" href="mailto:brr7438@gmail.com">brr7438@gmail.com</a></p>
+      </section>
+    </main>
+    <footer class="max-w-6xl mx-auto px-4 py-10 text-xs opacity-70 flex justify-between items-center">
+      <span>© <span id="year"></span> Bhumireddy Ramanatha Reddy</span>
+      <div class="flex gap-3">
+        <a href="https://github.com/yourusername" target="_blank">🐙 GitHub</a>
+        <a href="https://linkedin.com/in/yourusername" target="_blank">💼 LinkedIn</a>
+      </div>
+    </footer>
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+      const btn = document.getElementById('themeBtn'); const root = document.documentElement;
+      function setLabel() { btn.textContent = root.classList.contains('dark') ? '☀️ Light' : '🌙 Dark'; }
+      btn.addEventListener('click', ()=>{ root.classList.toggle('dark'); localStorage.setItem('theme', root.classList.contains('dark') ? 'dark' : 'light'); setLabel(); });
+      setLabel();
+      AOS.init({ once: true, duration: 800 });
+    </script>
+  </body>
+</html>
